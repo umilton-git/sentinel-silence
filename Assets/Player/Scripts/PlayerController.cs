@@ -11,11 +11,26 @@ public class PlayerController : MonoBehaviour
     Vector3 targetGridPos;
     Vector3 prevTargetGridPos;
     Vector3 targetRotation;
+    Vector3 forward;
+    Vector3 backward;
+    Vector3 left;
+    Vector3 right;
 
     private void Start() {
         targetGridPos = transform.position;
     }
 
+    private void Update() {
+        forward = transform.TransformDirection(Vector3.forward) * 1;
+        backward = transform.TransformDirection(Vector3.back) * 1;
+        left = transform.TransformDirection(Vector3.left) * 1;
+        right = transform.TransformDirection(Vector3.right) * 1;
+
+        Debug.DrawRay(transform.position, forward, Color.green);
+        Debug.DrawRay(transform.position, backward, Color.red);
+        Debug.DrawRay(transform.position, left, Color.blue);
+        Debug.DrawRay(transform.position, right, Color.cyan);
+    }
     private void FixedUpdate() {
         MovePlayer();
     }
@@ -41,10 +56,10 @@ public class PlayerController : MonoBehaviour
 
     public void RotateLeft() {if (AtRest) targetRotation -= Vector3.up * 90f; }
     public void RotateRight() {if (AtRest) targetRotation += Vector3.up * 90f; }
-    public void MoveForward() { if (AtRest) targetGridPos += transform.forward; }
-    public void MoveBackward() { if (AtRest) targetGridPos -= transform.forward; }
-    public void MoveLeft() { if (AtRest) targetGridPos -= transform.right; }
-    public void MoveRight() { if (AtRest) targetGridPos += transform.right; }
+    public void MoveForward() { if (AtRest && !Physics.Raycast(transform.position, forward, 1)) { targetGridPos += transform.forward; } }
+    public void MoveBackward() { if (AtRest && !Physics.Raycast(transform.position, backward, 1)) { targetGridPos -= transform.forward; } }
+    public void MoveLeft() { if (AtRest && !Physics.Raycast(transform.position, left, 1)) { targetGridPos -= transform.right; } }
+    public void MoveRight() { if (AtRest && !Physics.Raycast(transform.position, right, 1)) { targetGridPos += transform.right; } }
 
     bool AtRest {
         get{

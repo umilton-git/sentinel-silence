@@ -49,8 +49,6 @@ public class PlayerController : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * transitionSpeed);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(targetRotation), Time.deltaTime * transitionRotationSpeed);
             }
-        } else {
-            targetGridPos = prevTargetGridPos;
         }
     }
 

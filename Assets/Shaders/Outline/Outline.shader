@@ -81,6 +81,8 @@ Shader "Stylistic/Outline"
                 "Queue"="Transparent+1"
             }
 
+            Blend SrcAlpha OneMinusSrcAlpha
+
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag

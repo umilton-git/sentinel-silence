@@ -10,7 +10,8 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text nameText;
     public GameObject dialogueBox;
     public GameObject nameBox;
-    public DialogueManager instance;
+    private bool justStarted;
+    public static DialogueManager instance;
 
     public string[] dialogueLines;
 
@@ -20,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         instance = this;
+        justStarted = false;
     }
 
     // Update is called once per frame
@@ -27,18 +29,46 @@ public class DialogueManager : MonoBehaviour
     {
         if(dialogueBox.activeInHierarchy)
         {
-            if(Input.GetKeyDown(KeyCode.Z))
+            if(Input.GetKeyUp(KeyCode.Z))
             {
-                currentLine++;
-                if(currentLine < dialogueLines.Length)
+                if(!justStarted)
                 {
-                    dialogueText.text = dialogueLines[currentLine];
-                }
-                else
+                    currentLine++;
+                    if(currentLine < dialogueLines.Length)
+                    {
+                        checkName();
+                        dialogueText.text = dialogueLines[currentLine];
+                    }
+                    else
+                    {
+                        dialogueBox.SetActive(false);
+                        PlayerController.instance.inDialogue= false;
+                    }
+                } else
+
                 {
-                    dialogueBox.SetActive(false);
+                    justStarted = false;
                 }
             }
+        }
+    }
+
+    public void showDialogue(string[] convo) 
+    {
+        dialogueLines = convo;
+        currentLine = 0;
+        checkName();
+        dialogueText.text = dialogueLines[currentLine];
+        dialogueBox.SetActive(true);
+        justStarted = true;
+    }
+
+    public void checkName()
+    {
+        if(dialogueLines[currentLine].StartsWith("n-"))
+        {
+            nameText.text = dialogueLines[currentLine].Replace("n-", "");
+            currentLine++;
         }
     }
 }

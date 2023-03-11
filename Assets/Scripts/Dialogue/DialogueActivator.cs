@@ -15,15 +15,16 @@ public class DialogueActivator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canActivate == true)
+        if(canActivate == true && Input.GetKeyDown(KeyCode.Z))
         {
-            Debug.Log("True");
+            if(!DialogueManager.instance.dialogueBox.activeInHierarchy)
+            {
+                DialogueManager.instance.showDialogue(lines);
+                PlayerController.instance.inDialogue = true;
+            }
         }
-        else
-        {
-            Debug.Log("False");
-        }
-        if(PlayerController.intCheck.collider.gameObject == this.gameObject && PlayerController.intCheck.distance <= 1)
+
+        if(PlayerController.instance.intCheck.collider != null && PlayerController.instance.intCheck.collider.gameObject == this.gameObject && PlayerController.instance.intCheck.distance <= 1)
         {
             canActivate = true;
         }

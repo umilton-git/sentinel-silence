@@ -15,11 +15,16 @@ public class PlayerController : MonoBehaviour
     Vector3 backward;
     Vector3 left;
     Vector3 right;
+    private bool Interacting;
     public GameObject InteractionIndicator;
-    public static RaycastHit intCheck;
+    public RaycastHit intCheck;
+    public bool inDialogue;
+    public static PlayerController instance;
 
     private void Start() {
         targetGridPos = transform.position;
+        inDialogue = false;
+        instance = this;
     }
 
     private void Update() {
@@ -40,7 +45,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void MovePlayer() {
-        if (true) {
+        if (true && inDialogue == false) {
             prevTargetGridPos = targetGridPos;
             Vector3 targetPosition = targetGridPos;
             if(targetRotation.y > 270f && targetRotation.y < 361f) targetRotation.y = 0f;
@@ -60,7 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         if(Physics.Raycast(transform.position, forward, out intCheck))
         {
-            if(intCheck.collider.CompareTag("Interact") && intCheck.distance <= 1)
+            if(intCheck.collider.CompareTag("Interact") && intCheck.distance <= 1 && inDialogue == false)
             {
                 InteractionIndicator.SetActive(true);
             }
@@ -71,12 +76,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void RotateLeft() {if (AtRest) targetRotation -= Vector3.up * 90f; }
-    public void RotateRight() {if (AtRest) targetRotation += Vector3.up * 90f; }
-    public void MoveForward() { if (AtRest && !Physics.Raycast(transform.position, forward, 1)) { targetGridPos += transform.forward; } }
-    public void MoveBackward() { if (AtRest && !Physics.Raycast(transform.position, backward, 1)) { targetGridPos -= transform.forward; } }
-    public void MoveLeft() { if (AtRest && !Physics.Raycast(transform.position, left, 1)) { targetGridPos -= transform.right; } }
-    public void MoveRight() { if (AtRest && !Physics.Raycast(transform.position, right, 1)) { targetGridPos += transform.right; } }
+    public void RotateLeft() {if (AtRest && !inDialogue) targetRotation -= Vector3.up * 90f; }
+    public void RotateRight() {if (AtRest && !inDialogue) targetRotation += Vector3.up * 90f; }
+    public void MoveForward() { if (AtRest && !inDialogue && !Physics.Raycast(transform.position, forward, 1)) { targetGridPos += transform.forward; } }
+    public void MoveBackward() { if (AtRest && !inDialogue && !Physics.Raycast(transform.position, backward, 1)) { targetGridPos -= transform.forward; } }
+    public void MoveLeft() { if (AtRest && !inDialogue && !Physics.Raycast(transform.position, left, 1)) { targetGridPos -= transform.right; } }
+    public void MoveRight() { if (AtRest && !inDialogue && !Physics.Raycast(transform.position, right, 1)) { targetGridPos += transform.right; } }
 
     bool AtRest {
         get{

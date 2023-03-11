@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     Vector3 backward;
     Vector3 left;
     Vector3 right;
+    public GameObject InteractionIndicator;
+    public static RaycastHit intCheck;
 
     private void Start() {
         targetGridPos = transform.position;
@@ -30,6 +32,8 @@ public class PlayerController : MonoBehaviour
         Debug.DrawRay(transform.position, backward, Color.red);
         Debug.DrawRay(transform.position, left, Color.blue);
         Debug.DrawRay(transform.position, right, Color.cyan);
+
+        CheckInteractable();
     }
     private void FixedUpdate() {
         MovePlayer();
@@ -48,6 +52,21 @@ public class PlayerController : MonoBehaviour
             } else {
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * transitionSpeed);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(targetRotation), Time.deltaTime * transitionRotationSpeed);
+            }
+        }
+    }
+
+    public void CheckInteractable()
+    {
+        if(Physics.Raycast(transform.position, forward, out intCheck))
+        {
+            if(intCheck.collider.CompareTag("Interact") && intCheck.distance <= 1)
+            {
+                InteractionIndicator.SetActive(true);
+            }
+                    else
+            {
+                InteractionIndicator.SetActive(false);
             }
         }
     }

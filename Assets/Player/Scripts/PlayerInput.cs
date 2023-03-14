@@ -19,11 +19,14 @@ public class PlayerInput : MonoBehaviour
     }
 
     private void Update() {
-        if(Input.GetKeyUp(forward)) controller.MoveForward();
-        if(Input.GetKeyUp(back)) controller.MoveBackward();
-        if(Input.GetKeyUp(left)) controller.MoveLeft();
-        if(Input.GetKeyUp(right)) controller.MoveRight();
-        if(Input.GetKeyUp(turnLeft)) controller.RotateLeft();
-        if(Input.GetKeyUp(turnRight)) controller.RotateRight();
+        if(gameMenu.isPaused == false)
+        {
+            if(Input.GetKeyUp(forward)) controller.MoveForward();
+            if(Input.GetKeyUp(back)) controller.MoveBackward();
+            if(Input.GetKeyUp(left)) controller.MoveLeft();
+            if(Input.GetKeyUp(right)) controller.MoveRight();
+            if(Input.GetKeyUp(turnLeft)) controller.RotateLeft();
+            if(Input.GetKeyUp(turnRight)) controller.RotateRight();
+        }
     }
 }

@@ -1,66 +1,51 @@
-Shader "Custom/Mode7"
-{
-    Properties
-    {
+Shader "Custom/Mode7" {
+    Properties {
         _MainTex ("Texture", 2D) = "white" {}
-        _ScrollSpeed ("Scroll Speed", Range(0, 1)) = 0.1
-        _Perspective ("Perspective", Range(0, 1)) = 0.5
-        _PlaneRotation ("Plane Rotation", Range(-180, 180)) = 0
+        _Angle ("Angle", Range(0.0, 360.0)) = 315.0
+        _Scale ("Scale", Range(0.0, 100.0)) = 10.0
+        _ScrollSpeed ("Scroll Speed", Range(0.0, 10.0)) = 0.05
     }
  
-    SubShader
-    {
-        Tags {"Queue"="Transparent" "RenderType"="Transparent"}
- 
-        Pass
-        {
+    SubShader {
+        Pass {
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
             #include "UnityCG.cginc"
  
-            struct appdata_t
-            {
+            struct appdata {
                 float4 vertex : POSITION;
                 float2 uv : TEXCOORD0;
             };
  
-            struct v2f
-            {
+            struct v2f {
                 float2 uv : TEXCOORD0;
                 float4 vertex : SV_POSITION;
             };
  
             sampler2D _MainTex;
+            float _Angle;
+            float _Scale;
             float _ScrollSpeed;
-            float _Perspective;
-            float _PlaneRotation;
  
-            v2f vert (appdata_t v)
-            {
+            v2f vert (appdata v) {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv = v.uv;
+                float2 rotated = float2(v.vertex.x, v.vertex.z) * _Scale;
+                float s = sin(_Angle * 3.14159 / 180.0);
+                float c = cos(_Angle * 3.14159 / 180.0);
+                float2 rotated2 = float2(rotated.x * c + rotated.y * s, -rotated.x * s + rotated.y * c);
+                o.uv = v.uv + rotated2 * _ScrollSpeed;
                 return o;
             }
  
-            fixed4 frag (v2f i) : SV_Target
-            {
-                float4 color = tex2D(_MainTex, i.uv);
-                float2 scrollOffset = i.uv * _ScrollSpeed;
-                float2 perspectiveOffset = i.uv * _Perspective;
-                
-                // Rotate UV coordinates based on plane rotation
-                float angle = radians(_PlaneRotation);
-                float2 rotUV = float2(cos(angle)*i.uv.x + sin(angle)*i.uv.y,
-                                      -sin(angle)*i.uv.x + cos(angle)*i.uv.y);
-                
-                rotUV.x *= (1.0 - i.uv.y);
-                rotUV += scrollOffset - perspectiveOffset;
-                color = tex2D(_MainTex, rotUV);
-                return color;
+            fixed4 frag (v2f i) : SV_Target {
+                return tex2D(_MainTex, i.uv);
             }
+ 
             ENDCG
         }
     }
+ 
+    FallBack "Diffuse"
 }

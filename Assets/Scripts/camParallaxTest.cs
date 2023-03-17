@@ -9,6 +9,8 @@ public class camParallaxTest : MonoBehaviour
     public GameObject wall;
     public GameObject[] battler;
     public GameObject[] enemy;
+    public float flipXPosition = 9.0f; // The x position threshold for flipping the sprite
+public bool flipOnGreater = true;  // If true, flip when the x position is greater than the threshold, otherwise, flip when it's less than the threshold
 
     void Update()
     {
@@ -39,11 +41,23 @@ public class camParallaxTest : MonoBehaviour
         gameObject.transform.Rotate(vertRotation, 0, 0);
         foreach(var i in battler)
         {
+            SpriteRenderer spriteRenderer = i.gameObject.GetComponent<SpriteRenderer>();
             i.gameObject.transform.Translate(rotation * 5, 0, 0);
+            if(i.gameObject.transform.position.x > flipXPosition)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else { spriteRenderer.flipX = false; }
         }
         foreach(var i in enemy)
         {
-            i.gameObject.transform.Translate(-rotation * 2, vertRotation * 5, 0);
+            SpriteRenderer spriteRenderer = i.gameObject.GetComponent<SpriteRenderer>();
+            i.gameObject.transform.Translate(-rotation * 2, vertRotation * 7, 0);
+            if(i.gameObject.transform.position.x > flipXPosition)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else { spriteRenderer.flipX = false; }
         }
     }
 }

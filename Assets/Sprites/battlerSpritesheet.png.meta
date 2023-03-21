@@ -1,0 +1,1403 @@
+fileFormatVersion: 2
+guid: fb2baeea9ef3c6b4a943c468295383e8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: battlerSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4830
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206184e09c6b5c54bac7dc25beed2a72
+      internalID: 633305351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 4830
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e4b6103bf3aef4aa767b89a9433e87
+      internalID: -1177556500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 4830
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a867aef2bdb4c842b886b464b9eec95
+      internalID: 1393898456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 4830
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5101e845550a1c54496d7f5c978db391
+      internalID: -1777389159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 4830
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47571f9ec469bce498841abd97303105
+      internalID: -1596224268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 4830
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4105a73b679b14abfe325a4fe1e2f0
+      internalID: -1306704542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2994
+        y: 4830
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b7bd1dc885a0146a4e13efb6163eed
+      internalID: -1727858340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4140
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0428ce471b2bd114b92722c3ef4cd05a
+      internalID: -1786841072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 4140
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea2d41d9bf0ec54583970cbe8268242
+      internalID: -665082345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 4140
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba0c83710d01f540974410cbd2bed9c
+      internalID: 1994910784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 4140
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c49e344b2c6744488245596e2a20cd
+      internalID: 266098777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 4140
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70003d324084e404db449af1eda7f16a
+      internalID: 1820315464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 4140
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605685de434ba0d419ee772a375925ac
+      internalID: -1095380812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 2994
+        y: 4140
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1389cc11317e2cd4b9c4a62f3f499cbb
+      internalID: -1132684454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3450
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7be0274224c6f4fbbb2f4d15443848
+      internalID: 346589218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 3450
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52b3b06a9990de49a17caa6663f9933
+      internalID: -1022128630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 3450
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8eb008c39abd942858df008392079c
+      internalID: 151592754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 3450
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e431cff846703ff47a979bc05f82174e
+      internalID: 547249180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 3450
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd13cb3e7139ead44914bffbf170f778
+      internalID: -1275535533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 3450
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2beca38b0d78a4eb2b76ab80e77fc3
+      internalID: 643613435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 2994
+        y: 3450
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180b2a2842db68e4e8a2dd45bb042d29
+      internalID: 598674276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2760
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15ccb8d35e410c47a197ebc969dd110
+      internalID: -2090781546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 2760
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8537d62cb7ce3c54481320a9c05a49e2
+      internalID: -394855093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 2760
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03addc24b898664b8ad69ff9cbd6b64
+      internalID: -1199707575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 2760
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4208e72d70cb6204a9737a269a419d11
+      internalID: 997682656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 2760
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f78b8a57e609b1459774596c73576a6
+      internalID: -867375636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 2760
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7268066701e9b4249b319e1edd56446a
+      internalID: 821170819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 2994
+        y: 2760
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3e68ee25e11ef489740b5d0f251565
+      internalID: -1946495048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2070
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c34a7063ea75847a07b997eaa82646
+      internalID: -1651962138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 2070
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ed63d3868f9964aabe147d3124ba07
+      internalID: 1960907809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 2070
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc95235a58778a4f820d5b4edd4aeb0
+      internalID: 672911860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 2070
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023fa7cf11523cb4ea41b12232e7a208
+      internalID: -998689772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 2070
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fec1cd85eaeb8d408b91dac12fb9cdc
+      internalID: -1068166926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 2070
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d4f113edd50634a939bca823705a9a
+      internalID: 1478089380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 2994
+        y: 2070
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8e5493c28b6ef48a0fcdae0e69d5c3
+      internalID: -178199886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1380
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44270906a87964408449835bbb076be
+      internalID: -512034581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1380
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc83dee08a984b74f8bbd18a5425935d
+      internalID: -128956886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 1380
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bc0306ffd03fd41a75cab535c2cfe1
+      internalID: -957042318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 1380
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f45bf395221254783b16a578215a67
+      internalID: -1701316471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 1380
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a09479ef3c06b4d9b4db4b7755e5c1
+      internalID: -839846617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 1380
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185ea3297ec4afe44a07e0ae9a90c22f
+      internalID: -409869785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 2994
+        y: 1380
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c45ffc36704c942bab1f6eedbfd481
+      internalID: 411452771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c895dccae3e40f64f950f434c06b5a4e
+      internalID: -1269239699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 690
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844e202f4c2f0804197eba20889bff2f
+      internalID: -2065813759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 690
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b161f4e94f1d5e84188318136d042738
+      internalID: -1558806656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 690
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372d67c2ea3c7944fa3731139bcb7580
+      internalID: 1526511803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 690
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2180feae46779f246a1d92a86e4282b2
+      internalID: -533096266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 690
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9912006a7b744c4a8562a2b50be4eb9
+      internalID: -1917540351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 2994
+        y: 690
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b603a7bbd9b29fa4faf88eb5778e4a6b
+      internalID: -504215082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310758650632d4c449ad8e6a616a35be
+      internalID: -1331442011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 0
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0780666c4ff040e4694ccdda16510745
+      internalID: 1573995547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 0
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691ea9ad5ab72014aa18858dc2e67e20
+      internalID: -852339587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 0
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa93577e3ebb4a459841de8a2d5847a
+      internalID: -753890977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 0
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5d60aef90a5f8468e252c671b55fbd
+      internalID: 1171402357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 0
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29f393751096914b924befb8aff32b2
+      internalID: 1419909257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battlerSpritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 2994
+        y: 0
+        width: 499
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdfb7740d446e6459ed876d82d88ae5
+      internalID: 1236216790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f90ef221a08a27f4faf1ab09652bc8d7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      battlerSpritesheet_40: -409869785
+      battlerSpritesheet_51: -852339587
+      battlerSpritesheet_25: -867375636
+      battlerSpritesheet_34: -178199886
+      battlerSpritesheet_4: -1596224268
+      battlerSpritesheet_6: -1727858340
+      battlerSpritesheet_43: -2065813759
+      battlerSpritesheet_8: -665082345
+      battlerSpritesheet_5: -1306704542
+      battlerSpritesheet_54: 1419909257
+      battlerSpritesheet_24: 997682656
+      battlerSpritesheet_3: -1777389159
+      battlerSpritesheet_48: -504215082
+      battlerSpritesheet_7: -1786841072
+      battlerSpritesheet_10: 266098777
+      battlerSpritesheet_11: 1820315464
+      battlerSpritesheet_29: 1960907809
+      battlerSpritesheet_18: -1275535533
+      battlerSpritesheet_19: 643613435
+      battlerSpritesheet_30: 672911860
+      battlerSpritesheet_50: 1573995547
+      battlerSpritesheet_17: 547249180
+      battlerSpritesheet_16: 151592754
+      battlerSpritesheet_14: 346589218
+      battlerSpritesheet_26: 821170819
+      battlerSpritesheet_35: -512034581
+      battlerSpritesheet_36: -128956886
+      battlerSpritesheet_55: 1236216790
+      battlerSpritesheet_39: -839846617
+      battlerSpritesheet_13: -1132684454
+      battlerSpritesheet_23: -1199707575
+      battlerSpritesheet_45: 1526511803
+      battlerSpritesheet_0: 633305351
+      battlerSpritesheet_52: -753890977
+      battlerSpritesheet_12: -1095380812
+      battlerSpritesheet_33: 1478089380
+      battlerSpritesheet_47: -1917540351
+      battlerSpritesheet_46: -533096266
+      battlerSpritesheet_49: -1331442011
+      battlerSpritesheet_53: 1171402357
+      battlerSpritesheet_20: 598674276
+      battlerSpritesheet_28: -1651962138
+      battlerSpritesheet_31: -998689772
+      battlerSpritesheet_1: -1177556500
+      battlerSpritesheet_2: 1393898456
+      battlerSpritesheet_9: 1994910784
+      battlerSpritesheet_44: -1558806656
+      battlerSpritesheet_37: -957042318
+      battlerSpritesheet_38: -1701316471
+      battlerSpritesheet_21: -2090781546
+      battlerSpritesheet_22: -394855093
+      battlerSpritesheet_41: 411452771
+      battlerSpritesheet_27: -1946495048
+      battlerSpritesheet_42: -1269239699
+      battlerSpritesheet_15: -1022128630
+      battlerSpritesheet_32: -1068166926
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class camParallaxTest : MonoBehaviour
+public class camParallax : MonoBehaviour
 {
     public float rotationSpeed = 100.0f;
     public GameObject floor;
@@ -43,7 +43,7 @@ public bool flipOnGreater = true;  // If true, flip when the x position is great
         {
             SpriteRenderer spriteRenderer = i.gameObject.GetComponent<SpriteRenderer>();
             i.gameObject.transform.Translate(rotation * 5, 0, 0);
-            if(i.gameObject.transform.position.x > flipXPosition)
+            if(i.gameObject.transform.position.x > enemy[0].transform.position.x)
             {
                 spriteRenderer.flipX = true;
             }
@@ -53,7 +53,7 @@ public bool flipOnGreater = true;  // If true, flip when the x position is great
         {
             SpriteRenderer spriteRenderer = i.gameObject.GetComponent<SpriteRenderer>();
             i.gameObject.transform.Translate(-rotation * 2, vertRotation * 7, 0);
-            if(i.gameObject.transform.position.x > flipXPosition)
+            if(i.gameObject.transform.position.x > battler[0].transform.position.x)
             {
                 spriteRenderer.flipX = true;
             }

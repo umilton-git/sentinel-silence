@@ -1125,6 +1125,8 @@ MonoBehaviour:
   rotationSpeed: 15
   floor: {fileID: 2063162264}
   wall: {fileID: 2005278577}
+  p1: {fileID: 829202223}
+  p2: {fileID: 1868652717}
   battler:
   - {fileID: 829202223}
   - {fileID: 1868652717}
@@ -1526,14 +1528,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063162264}
-  m_LocalRotation: {x: 0.6903456, y: 0.15304591, z: -0.15304591, w: 0.6903456}
-  m_LocalPosition: {x: -79.75, y: -138.4, z: 377.8}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 1, y: -138.4, z: 377.8}
   m_LocalScale: {x: 2000, y: 2000, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 90, y: 25, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &2130608136
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,12 +5,10 @@ using UnityEngine;
 public class camParallax : MonoBehaviour
 {
     public float rotationSpeed = 100.0f;
-    public GameObject floor;
-    public GameObject wall;
-    public GameObject[] battler;
-    public GameObject[] enemy;
+    public GameObject floor, wall, p1, p2;
+    public GameObject[] battler, enemy;
     public float flipXPosition = 9.0f; // The x position threshold for flipping the sprite
-public bool flipOnGreater = true;  // If true, flip when the x position is greater than the threshold, otherwise, flip when it's less than the threshold
+    public bool flipOnGreater = true;  // If true, flip when the x position is greater than the threshold, otherwise, flip when it's less than the threshold
 
     void Update()
     {
@@ -36,7 +34,7 @@ public bool flipOnGreater = true;  // If true, flip when the x position is great
             vertRotation = rotationSpeed * Time.deltaTime;
         }
 
-        floor.transform.Rotate(0, 0, rotation);
+        floor.transform.Translate(-rotation, 0, 0);
         wall.gameObject.transform.Translate(-rotation, 0, 0);
         gameObject.transform.Rotate(vertRotation, 0, 0);
         foreach(var i in battler)
@@ -52,7 +50,7 @@ public bool flipOnGreater = true;  // If true, flip when the x position is great
         foreach(var i in enemy)
         {
             SpriteRenderer spriteRenderer = i.gameObject.GetComponent<SpriteRenderer>();
-            i.gameObject.transform.Translate(-rotation * 2, vertRotation * 7, 0);
+            i.gameObject.transform.Translate(-rotation * 5, vertRotation * 7, 0);
             if(i.gameObject.transform.position.x > battler[0].transform.position.x)
             {
                 spriteRenderer.flipX = true;

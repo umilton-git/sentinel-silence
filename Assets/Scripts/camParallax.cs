@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class camParallax : MonoBehaviour
 {
+    public float flipXPosition = 9.0f; // The x position threshold for flipping the sprite
     public float rotationSpeed = 100.0f;
     public GameObject floor, wall, p1, p2;
     public GameObject[] battler, enemy;
-    public float flipXPosition = 9.0f; // The x position threshold for flipping the sprite
     public bool flipOnGreater = true;  // If true, flip when the x position is greater than the threshold, otherwise, flip when it's less than the threshold
 
     void Update()
